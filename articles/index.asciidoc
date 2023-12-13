@@ -20,6 +20,10 @@ page-links:
 xref:{articles}/guide/quick-start#["Quick Start",role="button primary water"]
 xref:{articles}/tutorial/overview#["Tutorial",role="button secondary water"]
 </div>
+<div class="koda">
+<input id="koda" type="text" id="koda_question" name="koda_question" placeholder="Submit a question here or just click the button">
+xref:{articles}/guide/quick-start#["Ask documentation",role="button secondary water"]
+</div>
 </p>
 </div>
 ++++
@@ -177,6 +181,32 @@ nav[aria-label=breadcrumb] {
 
 .components.cards .card .imageblock.icon {
   aspect-ratio: 111 / 80;
+}
+
+.hero .koda {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .koda .button {
+    height: 31px;
+    width: 20%;
+    padding: 0 25px 1px 25px;
+    font-size: 14px;
+}
+
+.hero input#koda {
+    height: 30px;
+    width: 64%;
+    background-color: var(--lumo-contrast-10pct);
+    border: 1px solid var(--lumo-contrast-20pct);
+    padding-left: 10px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.hero input#koda::placeholder {
+    font-weight: 500;
 }
 </style>
 ++++
